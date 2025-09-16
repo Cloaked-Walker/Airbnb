@@ -1,0 +1,43 @@
+@font-face {
+    font-family: anormal;
+    src: url(/font/AirbnbCerealVF_W_Wght.2d9d32865ef1262644c455b3ead871e9.woff2);
+}
+
+*{
+    margin:gitgit init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Cloaked-Walker/Airbnb.git
+git push -u origin main 0px;
+    padding: 0px;
+}
+
+.nav{
+    margin-inline: 24px;
+}
+
+.span-nav{
+    max-width: 100%;
+    font-weight: 500;
+    line-height: 1.125rem;
+    font-size: 0.875;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    letter-spacing: anormal;
+    gap: 8px;
+}
+
+.search{
+    display: block;
+    height: 12px;
+    width: 12px;
+}
+
+.start-span{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
