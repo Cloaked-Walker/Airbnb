@@ -287,7 +287,7 @@
 
 /* Body */
 
-.body {
+.main-body {
     margin-bottom: 49px;
 }
 
@@ -302,8 +302,12 @@
     margin-block-start: 32px;
     /* justify-content: space-between; */
     align-items: center;
-    margin-block-end: 14px;
+    margin-bottom: 12px;
     display: flex;
+}
+
+.pune-head {
+    margin-top: 30px;
 }
 
 .bengaluru-head h2 {
@@ -316,8 +320,15 @@
     letter-spacing: -0.18px;
 }
 
-.bengaluru-arrow img {
+.bengaluru-arrow img{
     display: block;
+    height: 12px;
+    width: 12px;
+    margin-left: 2px;
+    stroke: black;
+}
+
+.barrow{
     height: 12px;
     width: 12px;
     margin-left: 2px;
@@ -331,7 +342,7 @@
     gap: 11px;
     overflow: scroll;
     scrollbar-width: none;
-    padding: 3px 24px 16px;
+    padding: 3px 24px 0px;
 }
 
 .bfirst{
@@ -340,7 +351,7 @@
     width: 100%;
     max-width: 333px;
     height: 100%;
-    gap: 2px;
+    gap: 3px;
     position: relative;
 }
 
@@ -397,9 +408,38 @@
     grid-template-columns: minmax(0, 1fr);  
 }
 
+.bfirst-bottom{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .bfirst-text{
     font-family: anormal;
     font-size: 13px;
     line-height: 16px;
     font-weight: 500;
+    text-wrap-style: pretty;
+}
+
+.cost-rate{
+    font-family: anormal;
+    font-weight: 400;
+    color: #6a6a6a;
+    line-height: 16px;
+    font-size: 12px;
+}
+
+.dot{
+    font-size: 12px;
+    font-weight: bold;
+    color: #c1c1c1;
+    font-family: anormal;
+}
+
+.star img{
+    line-height: 16px;
+    height: 8px;
+    width: 8px;
+    margin-right: 2.5px;
+    margin-bottom: 1px;
 }
