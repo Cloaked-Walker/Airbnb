@@ -226,7 +226,6 @@
     font-size: 8px;
     background: linear-gradient(173.86deg, rgba(255, 255, 255, 0.9) 90.56%, rgba(191, 205, 213, 0.9) 82.32%);
     background-clip: text;
-
 }
 
 /* Services */
@@ -275,7 +274,7 @@
     font-family: anormal;
 }
 
-.services-text:hover{
+.services-text:hover {
     font-size: 12px;
     font-weight: 600;
     letter-spacing: -0.12px;
@@ -288,16 +287,16 @@
 
 /* Body */
 
-.body{
+.body {
     margin-bottom: 49px;
 }
 
-.bengaluru-main{
+.bengaluru-main {
     display: grid;
     grid-template-columns: 375px;
 }
 
-.bengaluru-head{
+.bengaluru-head {
     margin-inline-end: 24px;
     margin-inline-start: 24px;
     margin-block-start: 32px;
@@ -307,7 +306,7 @@
     display: flex;
 }
 
-.bengaluru-head h2{
+.bengaluru-head h2 {
     margin-bottom: 0;
     margin-top: 0;
     font-size: 18px;
@@ -317,10 +316,90 @@
     letter-spacing: -0.18px;
 }
 
-.bengaluru-arrow img{
+.bengaluru-arrow img {
     display: block;
     height: 12px;
     width: 12px;
     margin-left: 2px;
     stroke: black;
+}
+
+.bengaluru-body {
+    grid-auto-flow: column;
+    display: grid;
+    grid-auto-columns: calc((100% - 11px) / 2);
+    gap: 11px;
+    overflow: scroll;
+    scrollbar-width: none;
+    padding: 3px 24px 16px;
+}
+
+.bfirst{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 333px;
+    height: 100%;
+    gap: 2px;
+    position: relative;
+}
+
+.bfirst-img img{
+    border-radius: 20px;
+    box-shadow: ;
+    aspect-ratio: 20 / 19;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    object-position: center;
+    height: 150.09px;
+    min-width: 150.09px;
+}
+
+.guest{
+    position: absolute;
+    padding: 11px 12px 12px 12px;
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+    gap: 12px;
+}
+
+.guest span{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 0px 0px 1px, rgba(0, 0, 0, 0.04) 0px 2px ;
+    font-weight: 600;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-feature-settings: "salt";
+    line-height: 13px;
+    font-size: 11px;
+    color: #222222;
+    padding: 5px 9px;
+    backdrop-filter: blur(32px);
+    font-family: anormal;
+}
+
+.guest img{
+    width: 24px;
+    height: 24px;
+}
+
+.bfirst-content{
+    margin-inline-start: 4px;
+    margin-inline-end: 4px;
+    display: grid;
+    gap: 2px;
+    grid-template-columns: minmax(0, 1fr);  
+}
+
+.bfirst-text{
+    font-family: anormal;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 500;
 }
