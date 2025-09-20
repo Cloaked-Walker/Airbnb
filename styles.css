@@ -360,17 +360,16 @@
     box-shadow: ;
     aspect-ratio: 20 / 19;
     width: 100%;
-    height: 100%;
+    /* height: 100% !important; */
     object-fit: cover;
     box-sizing: border-box;
     object-position: center;
-    height: 150.09px;
     min-width: 150.09px;
 }
 
 .guest{
     position: absolute;
-    padding: 11px 12px 12px 12px;
+    padding: 12px 12px 12px 12px;
     display: flex;
     justify-content: space-between;
     /* width: 100%; */
@@ -379,7 +378,7 @@
 
 .guest span{
     background-color: rgba(255, 255, 255, 0.8);
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 14px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 0px 0px 1px, rgba(0, 0, 0, 0.04) 0px 2px ;
     font-weight: 600;
@@ -393,6 +392,8 @@
     padding: 5px 9px;
     backdrop-filter: blur(32px);
     font-family: anormal;
+    padding-block: 5.5px;
+    padding-inline: 9.5px;
 }
 
 .guest img{
@@ -428,7 +429,7 @@
     line-height: 16px;
     font-size: 12px;
 }
-
+ 
 .dot{
     font-size: 12px;
     font-weight: bold;
@@ -441,5 +442,218 @@
     height: 8px;
     width: 8px;
     margin-right: 2.5px;
-    margin-bottom: 1px;
+    margin-bottom: 1px; 
+}
+
+/* Inspiration */
+
+.inspiration{
+    background: #f7f7f7;
+    padding-inline-start: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 48px;
+    /* padding-block-end: 48px; */
+    max-width: 1920px;
+    margin-inline: auto;
+}
+
+.inspiration h2{
+    margin-bottom: 8px;
+    line-height: 26px;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 0;
+    letter-spacing: -0.22px;
+    font-family: anormal;
+}
+
+.line{
+    background-color: #dddddd;
+    height: 1px;
+}
+
+.button-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-arrow{
+    background-color: transparent;
+    left: -12px;
+    align-items: center;
+    border: none;
+    width: 36px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    top: 1px;
+    margin-left: -12px;
+}
+
+.left-arrow img{
+    display: block;
+    height: 16px;
+    width: 16px;
+    color: #222222;
+}
+
+.right-arrow{
+    background-color: transparent;
+    right: -12px;
+    align-items: center;
+    border: none;
+    width: 36px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    top: 1px;
+    margin-right: -12px
+}
+
+.right-arrow img{
+    display: block;
+    height: 16px;
+    width: 16px;
+    color: #222222;
+}
+
+/* footer */
+
+footer{
+    background: #f7f7f7;
+    padding-bottom: 80px !important;
+    position: relative !important;
+}
+
+.main-section{
+    padding: 0px 24px;
+    max-width: 1920px !important;
+    margin-inline: auto !important;
+}
+
+.section-class{
+    grid-column: 1 / -1;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.section-class h3{
+    line-height: 18px;
+    margin-bottom: 17px;
+    font-size: 14px;
+    font-family: anormal;
+    color: #222222;
+    font-weight: 500;
+}
+
+ul{
+    display: grid;
+    gap: 18px;
+    list-style: none;
+}
+
+.f-line{
+    background: #ebebeb;
+    height: 1px;
+}
+
+.footer-text{
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: anormal;
+    color: #222222;
+    text-align: left;
+    letter-spacing: normal;
+}
+
+.f-lines{
+    background: #ebebeb;
+    height: 1px;
+}
+
+.footer-bot{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.lang-rate{
+    margin-left: -9px !important;
+    margin-bottom: 3px !important;
+    display: flex;
+    /* gap: 10px; */
+}
+
+.footer-lang{
+    margin-right: 2px;
+}
+
+.footer-button{
+    border-width: 0px;
+    background-color: transparent;
+    border-radius: 8px;
+    line-height: 18px;
+    border: 1px solid transparent;
+    min-width: auto;
+    width: auto;
+    padding: 6px 8px;
+}
+
+.lang{
+    gap: 8px;
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+}
+
+.lang img{
+    display: block;
+    height: 16px;
+    width: 16px;
+    color: #222222;
+}
+
+.fb-text{
+    text-align: center;
+    line-height: 18px;
+    font-size: 14px;
+    font-family: anormal;
+    font-weight: 500;
+}
+
+.footer-icon{
+    margin-bottom: 13px !important;
+    padding: 8px 0px !important;
+}
+
+.ul-icon{
+    list-style: none !important;
+    padding: 0px !important;
+    display: flex !important;
+    line-height: 0px !important;
+    gap: 24px !important;
+}
+
+.li-img{
+    display: block;
+    height: 16px;
+    width: 16px;
+    color: #222222;
+}
+
+.airbnb{
+    margin-bottom: 4px;
+}
+
+.bottom-terms{
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    align-items: center;
+}
+
+.footer-dot{
+    text-align: center;
+    line-height: 18px;
+    align-items: center;
 }
