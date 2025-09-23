@@ -78,6 +78,14 @@
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.08);
 }
 
+.airbnb-logo {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
 /* homes */
 
 .homes {
@@ -306,6 +314,10 @@
     display: flex;
 }
 
+.head-scroll {
+    display: none;
+}
+
 .pune-head {
     margin-top: 30px;
 }
@@ -320,7 +332,7 @@
     letter-spacing: -0.18px;
 }
 
-.bengaluru-arrow img{
+.bengaluru-arrow img {
     display: block;
     height: 12px;
     width: 12px;
@@ -328,11 +340,15 @@
     stroke: black;
 }
 
-.barrow{
+.barrow {
     height: 12px;
     width: 12px;
     margin-left: 2px;
     stroke: black;
+}
+
+.bengaluru-mbody{
+    padding: 0px 0px;
 }
 
 .bengaluru-body {
@@ -345,7 +361,7 @@
     padding: 3px 24px 0px;
 }
 
-.goa{
+.goa {
     grid-auto-flow: column;
     display: grid;
     grid-auto-columns: calc((100% - 11px) / 2);
@@ -355,17 +371,17 @@
     padding: 3px 24px 15px;
 }
 
-.bfirst{
+.bfirst {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 333px;
+    /* max-width: 333px; */
     height: 100%;
     gap: 3px;
     position: relative;
 }
 
-.bfirst-img img{
+.bfirst-img img {
     border-radius: 20px;
     box-shadow: ;
     aspect-ratio: 20 / 19;
@@ -377,20 +393,32 @@
     /* min-width: 150.09px; */
 }
 
-.guest{
+.guest {
     position: absolute;
-    padding: 12px 12px 12px 12px;
-    display: flex;
-    justify-content: space-between;
-    /* width: 100%; */
-    gap: 12px;
+    padding: 12px 12px 0px 12px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    grid-template-areas: 'top-row top-row top-row ' 'middle-row middle-row middle-row' 'bottom-row bottom-row bottom-row';
+    right: 0;
+    left: 0;
+    top: 0;
+    overflow: hidden;
 }
 
-.guest span{
+.guest-content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, auto));
+    grid-area: top-row;
+    column-gap: 12px;
+    justify-content: space-between;
+}
+
+.guest-text {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 14px;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 0px 0px 1px, rgba(0, 0, 0, 0.04) 0px 2px ;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 0px 0px 1px, rgba(0, 0, 0, 0.04) 0px 2px 6px 0px, rgba(0, 0, 0, 0.1) 0px 4px 8px 0px;
     font-weight: 600;
     align-items: center;
     display: flex;
@@ -404,27 +432,28 @@
     font-family: anormal;
     padding-block: 5.5px;
     padding-inline: 9.5px;
+    height: fit-content;
 }
 
-.guest img{
+.guest img {
     width: 24px;
     height: 24px;
 }
 
-.bfirst-content{
+.bfirst-content {
     margin-inline-start: 4px;
     margin-inline-end: 4px;
     display: grid;
     gap: 2px;
-    grid-template-columns: minmax(0, 1fr);  
+    grid-template-columns: minmax(0, 1fr);
 }
 
-.bfirst-bottom{
+.bfirst-bottom {
     display: flex;
     flex-wrap: wrap;
 }
 
-.bfirst-text{
+.bfirst-text {
     font-family: anormal;
     font-size: 13px;
     line-height: 16px;
@@ -432,32 +461,32 @@
     text-wrap-style: pretty;
 }
 
-.cost-rate{
+.cost-rate {
     font-family: anormal;
     font-weight: 400;
     color: #6a6a6a;
     line-height: 16px;
     font-size: 12px;
 }
- 
-.dot{
+
+.dot {
     font-size: 12px;
     font-weight: bold;
     color: #c1c1c1;
     font-family: anormal;
 }
 
-.star img{
+.star img {
     line-height: 16px;
     height: 8px;
     width: 8px;
     margin-right: 2.5px;
-    margin-bottom: 1px; 
+    margin-bottom: 1px;
 }
 
 /* Inspiration */
 
-.inspiration{
+.inspiration {
     background: #f7f7f7;
     padding-inline-start: 24px;
     padding-inline-end: 24px;
@@ -467,7 +496,7 @@
     margin-inline: auto;
 }
 
-.inspiration h2{
+.inspiration h2 {
     margin-bottom: 8px;
     line-height: 26px;
     font-size: 22px;
@@ -477,17 +506,17 @@
     font-family: anormal;
 }
 
-.line{
+.line {
     background-color: #dddddd;
     height: 1px;
 }
 
-.button-div{
+.button-div {
     display: flex;
     justify-content: space-between;
 }
 
-.left-arrow{
+.left-arrow {
     background-color: transparent;
     left: -12px;
     align-items: center;
@@ -500,14 +529,14 @@
     margin-left: -12px;
 }
 
-.left-arrow img{
+.left-arrow img {
     display: block;
     height: 16px;
     width: 16px;
     color: #222222;
 }
 
-.right-arrow{
+.right-arrow {
     background-color: transparent;
     right: -12px;
     align-items: center;
@@ -520,7 +549,7 @@
     margin-right: -12px
 }
 
-.right-arrow img{
+.right-arrow img {
     display: block;
     height: 16px;
     width: 16px;
@@ -529,25 +558,31 @@
 
 /* footer */
 
-footer{
+footer {
     background: #f7f7f7;
     padding-bottom: 80px !important;
     position: relative !important;
 }
 
-.main-section{
+.main-section {
     padding: 0px 24px;
     max-width: 1920px !important;
     margin-inline: auto !important;
 }
 
-.section-class{
+.section-class {
     grid-column: 1 / -1;
     padding-top: 24px;
     padding-bottom: 24px;
 }
 
-.section-class h3{
+.first-section {
+    grid-column: 1 / -1;
+    padding-top: 22px;
+    padding-bottom: 24px;
+}
+
+.section-class h3 {
     line-height: 18px;
     margin-bottom: 17px;
     font-size: 14px;
@@ -556,19 +591,19 @@ footer{
     font-weight: 500;
 }
 
-ul{
+ul {
     display: grid;
     gap: 18px;
     list-style: none;
 }
 
-.f-line{
+.f-line {
     background: #dddddd;
     height: 1px;
     margin-top: 1px;
 }
 
-.footer-text{
+.footer-text {
     line-height: 18px;
     font-size: 14px;
     font-weight: 400;
@@ -578,29 +613,29 @@ ul{
     letter-spacing: normal;
 }
 
-.f-lines{
+.f-lines {
     background: #ebebeb;
     margin-top: 1px;
     height: 1px;
 }
 
-.footer-bot{
+.footer-bot {
     padding-top: 24px;
     padding-bottom: 25px;
 }
 
-.lang-rate{
+.lang-rate {
     margin-left: -9px !important;
     margin-bottom: 3px !important;
     display: flex;
     /* gap: 10px; */
 }
 
-.footer-lang{
+.footer-lang {
     margin-right: 2px;
 }
 
-.footer-button{
+.footer-button {
     border-width: 0px;
     background-color: transparent;
     border-radius: 8px;
@@ -614,21 +649,21 @@ ul{
     padding-right: 8px;
 }
 
-.lang{
+.lang {
     gap: 8px;
     justify-content: center;
     display: inline-flex;
     align-items: center;
 }
 
-.lang img{
+.lang img {
     display: block;
     height: 16px;
     width: 16px;
     color: #222222;
 }
 
-.fb-text{
+.fb-text {
     text-align: center;
     line-height: 18px;
     font-size: 14px;
@@ -636,12 +671,12 @@ ul{
     font-weight: 500;
 }
 
-.footer-icon{
+.footer-icon {
     margin-bottom: 13px !important;
     padding: 8px 0px !important;
 }
 
-.ul-icon{
+.ul-icon {
     list-style: none !important;
     padding: 0px !important;
     display: flex !important;
@@ -649,25 +684,25 @@ ul{
     gap: 24px !important;
 }
 
-.li-img{
+.li-img {
     display: block;
     height: 16px;
     width: 16px;
     color: #222222;
 }
 
-.airbnb{
+.airbnb {
     margin-bottom: 4px;
 }
 
-.bottom-terms{
+.bottom-terms {
     display: flex;
     flex-direction: row;
     gap: 7px;
     align-items: center;
 }
 
-.footer-dot{
+.footer-dot {
     /* text-align: center;
     line-height: 18px;
     align-items: center; */
@@ -676,8 +711,66 @@ ul{
 
 /* media-query */
 
-@media screen and (min-width: 412px){
-    .nav-icon{
+/* 412px */
+
+@media screen and (min-width: 412px) {
+    .nav-icon {
         padding: 20px 64px 0px;
+    }
+}
+
+/* 744px */
+
+@media screen and (min-width: 744px) {
+    .nav {
+        display: none;
+    }
+
+    .head-scroll {
+        margin-left: auto;
+        align-self: flex-start;
+
+        align-items: center;
+        display: flex;
+        color: #222222;
+    }
+
+    .scroll-div {
+        display: flex;
+        column-gap: 4px;
+    }
+
+    .scroll-button {
+        background-color: #f2f2f2;
+        color: #c1c1c1;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        height: 24px;
+        width: 24px;
+        border: none;
+        display: flex;
+    }
+
+    .scroll-button img {
+        display: block;
+        height: 12px;
+        width: 12px;
+        stroke: #c1c1c1;
+        overflow: visible;
+    }
+
+    .bengaluru-mbody{
+        padding: 0px 24px;
+    }
+
+    .bengaluru-body {
+        display: grid;
+        grid-auto-columns: calc((100% - 11px) / 4);
+    }
+
+    .goa {
+        display: grid;
+        grid-auto-columns: calc((100% - 11px) / 4);
     }
 }
