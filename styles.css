@@ -197,6 +197,22 @@
     border-bottom: 3px solid black;
 }
 
+.new-eicon{
+    padding: 3px 6px;
+    font-size: 8px;
+    box-shadow: 0 0.953955px 1.90791px rgba(60, 77, 107, 0.25), 0 3.81582px 5.72373px rgba(60, 77, 107, 0.25), inset 0 0 2px 0.5px #001c40, inset 0 -1px 3px #d7ebff;
+    background: linear-gradient(357.5deg, #3e567c 1.59%, #3a5475 21.23%, #2d3c5b 58.6%, #809dc0 97.4%);
+    border-radius: 10px 10px 10px 2px;
+    transform-origin: bottom left;
+    /* left: 100%;
+    top: -5px; */
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    margin-right: -68px;
+    bottom: 48px;
+}
+
 .new-icon {
     padding: 3px 6px;
     font-size: 8px;
@@ -822,6 +838,7 @@ ul {
         align-items: center;
         display: flex;
         flex-direction: row;
+        margin-right: 4px;
     }
 
     .exp-span{
@@ -832,17 +849,22 @@ ul {
     }
 
     .exp-text{
-        margin-left: 8px;
+        margin-left: 7px;
         line-height: 18px;
         font-weight: 400;
         text-wrap: nowrap;
         font-size: 14px;
         letter-spacing: normal;
         margin-bottom: 2px;
+        margin-right: 1px;
+    }
+
+    .new-eicon{
+        transform: translate(36px, -1px);
     }
 
     .new-icon{
-        transform: translate(36px, 0px);
+        transform: translate(36px, -1px);
     }
 
     .services{
@@ -850,6 +872,8 @@ ul {
         align-items: center;
         display: flex;
         flex-direction: row;
+        margin-left: -2px;
+        margin-right: 2px;
     }
 
     .services-span{
@@ -933,7 +957,7 @@ ul {
         opacity: 1;
         background: transparent;
         box-shadow: rgba(0, 0, 0, 0.1) 0 8px 24px 0, rgba(0, 0, 0, 0.02) 0 0 0 1px;;
-        height: 66px;
+        height: 64px;
         max-width: 850px;
         border: 1px solid #dddddd;
     }
@@ -941,7 +965,7 @@ ul {
     .d-sec{
         display: flex;
         position: relative;
-        padding: 15px 32px;
+        padding: 14px 32px;
         min-width: 0;
         flex-direction: column;
         overflow: clip;
@@ -950,7 +974,7 @@ ul {
     .d-sect{
         display: flex;
         position: relative;
-        padding: 15px 24px;
+        padding: 14px 24px;
         min-width: 0;
         flex-direction: column;
         overflow: clip;
@@ -976,7 +1000,8 @@ ul {
         color: #6d6969;
         text-overflow: ellipsis;
         display: block;
-        white-space: nowrap;        
+        white-space: nowrap; 
+        overflow: clip;      
     }
 
     .d-line{
@@ -990,7 +1015,7 @@ ul {
         justify-content: space-between;
         display: flex;
         position: relative;
-        padding: 9px 10px 9px 24px;
+        padding: 8px 9px 8px 24px;
         min-width: 0;
         flex-direction: row;
     }
@@ -1100,14 +1125,6 @@ ul {
         grid-auto-columns: calc((100% - 11px) / 4);
     }
 
-    .inspiration {
-        padding-block-end: 48px;
-    }
-
-    .button-div {
-        display: none;
-    }
-
     footer {
         padding-bottom: 0px !important;
     }
@@ -1116,7 +1133,7 @@ ul {
         display: grid;
         grid-template-columns: repeat(6, minmax(0, 1fr));
         column-gap: 16px;
-        padding-top: 24px;
+        padding-top: 22px;
         padding-bottom: 32px;
     }
 
