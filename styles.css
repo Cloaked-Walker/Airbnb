@@ -617,7 +617,7 @@ ul {
 
 .footer-bot {
     padding-top: 24px;
-    padding-bottom: 25px;
+    /* padding-bottom: 25px; */
 }
 
 .footer-mbottom {
@@ -713,6 +713,14 @@ ul {
     transform: translateY(2px);
 }
 
+.footer-terms{
+    margin-bottom: 25px;
+}
+
+.footer-mterms{
+    display: none;
+}
+
 /* media-query */
 
 /* 412px */
@@ -733,6 +741,7 @@ ul {
     .main-mnav{
         display: flex;
         flex-direction: column;
+        margin-bottom: 72px;
     }
 
     .nav-icon{
@@ -780,7 +789,7 @@ ul {
     }
 
     .homes{
-        margin-bottom: 12px;
+        margin-bottom: 14px;
         align-items: center;
         display: flex;
         flex-direction: row;
@@ -799,16 +808,17 @@ ul {
     }
 
     .homes-text{
-        margin-left: 8px;
+        margin-left: 12px;
         line-height: 18px;
         font-weight: 400;
         text-wrap: nowrap;
         font-size: 14px;
         letter-spacing: normal;
+        margin-bottom: 2px;
     }
 
     .experiences{
-        margin-bottom: 12px;
+        margin-bottom: 14px;
         align-items: center;
         display: flex;
         flex-direction: row;
@@ -828,14 +838,15 @@ ul {
         text-wrap: nowrap;
         font-size: 14px;
         letter-spacing: normal;
+        margin-bottom: 2px;
     }
 
     .new-icon{
-        transform: translate(34px, -2px);
+        transform: translate(36px, 0px);
     }
 
     .services{
-        margin-bottom: 12px;
+        margin-bottom: 14px;
         align-items: center;
         display: flex;
         flex-direction: row;
@@ -855,6 +866,7 @@ ul {
         font-size: 14px;
         text-wrap: nowrap;
         letter-spacing: normal;
+        margin-bottom: 2px;
     }
 
     .menu{
@@ -907,7 +919,7 @@ ul {
         max-width: 850px;
         display: flex;
         padding-inline: 22px;
-        padding-top: 22px;
+        padding-top: 14px;
     }
 
     .d-button{
@@ -922,19 +934,27 @@ ul {
         background: transparent;
         box-shadow: rgba(0, 0, 0, 0.1) 0 8px 24px 0, rgba(0, 0, 0, 0.02) 0 0 0 1px;;
         height: 66px;
+        max-width: 850px;
+        border: 1px solid #dddddd;
     }
 
     .d-sec{
-        align-items: left;
-        justify-content: space-between;
         display: flex;
         position: relative;
         padding: 15px 32px;
         min-width: 0;
         flex-direction: column;
+        overflow: clip;
     }
 
-
+    .d-sect{
+        display: flex;
+        position: relative;
+        padding: 15px 24px;
+        min-width: 0;
+        flex-direction: column;
+        overflow: clip;
+    }
 
     .d-btext{
         padding-bottom: 2px;
@@ -952,8 +972,8 @@ ul {
         letter-spacing: normal;
         font-family: anormal;
         font-size: 14px;
-        font-weight: 500;
-        color: #222222;
+        font-weight: 400;
+        color: #6d6969;
         text-overflow: ellipsis;
         display: block;
         white-space: nowrap;        
@@ -970,14 +990,12 @@ ul {
         justify-content: space-between;
         display: flex;
         position: relative;
-        padding: 15px 32px;
+        padding: 9px 10px 9px 24px;
         min-width: 0;
         flex-direction: row;
     }
 
-    .dtext-div{
-        align-items: center;
-        justify-content: space-between;
+    .dtext-div{ 
         display: flex;
         position: relative;
         min-width: 0;
@@ -1010,6 +1028,20 @@ ul {
         display: block;
         height: 16px;
         width: 16px;
+    }
+
+    .main-body{
+        margin-bottom: 47px;
+    }
+
+    .bengaluru-head{
+        margin-bottom: 10px;
+    }
+
+    .bengaluru-head h2{
+        line-height: 25px;
+        font-size: 20px;
+        display: inline-block;
     }
 
     .head-scroll {
@@ -1053,6 +1085,14 @@ ul {
         display: grid;
         grid-auto-columns: calc((100% - 11px) / 4);
         padding-left: 0px;
+    }
+
+    .body-img{
+        min-width: 165.75px;
+    }
+
+    .guest img{
+        margin-right: -1px;
     }
 
     .goa {
