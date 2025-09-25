@@ -393,7 +393,7 @@
     position: relative;
 }
 
-.bfirst-img img {
+.body-img {
     border-radius: 20px;
     box-shadow: ;
     aspect-ratio: 20 / 19;
@@ -406,6 +406,19 @@
 }
 
 .guest {
+    position: absolute;
+    padding: 12px 12px 0px 12px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    grid-template-areas: 'top-row top-row top-row ' 'middle-row middle-row middle-row' 'bottom-row bottom-row bottom-row';
+    right: 0;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.guests{
     position: absolute;
     padding: 12px 12px 0px 12px;
     display: grid;
@@ -497,6 +510,10 @@
 }
 
 /* Inspiration */
+
+.inspire-main{
+    background: #f7f7f7;
+}
 
 .inspiration {
     background: #f7f7f7;
@@ -1090,8 +1107,18 @@ ul {
     }
 
     .scroll-button {
-        background-color: #f2f2f2;
-        color: #c1c1c1;
+        background-color: transparent;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        height: 24px;
+        width: 24px;
+        border: 1px solid #c1c1c1;
+        display: flex;
+    }
+
+    .scroll-rbutton{
+        background-color: ;
         justify-content: center;
         align-items: center;
         border-radius: 50%;
@@ -1102,6 +1129,14 @@ ul {
     }
 
     .scroll-button img {
+        display: block;
+        height: 12px;
+        width: 12px;
+        stroke: #c1c1c1;
+        overflow: visible;
+    }
+
+    .scroll-rbutton img{
         display: block;
         height: 12px;
         width: 12px;
@@ -1326,6 +1361,7 @@ ul {
         font-family: anormal;
         font-weight: 500;
         padding: 11px 12px;
+        will-change: transform;
     }
 
     .main-body{
@@ -1342,6 +1378,14 @@ ul {
         gap: 9px;
     }
 
+    .body-img{
+        width: 99%;
+    }
+
+    .guest{
+        padding-right: 14px;
+    }
+
     .inspiration h2{
         margin-bottom: 8px;
     }
@@ -1351,14 +1395,21 @@ ul {
     }
 }
 
+/* 1440 */
+
 @media screen and (min-width: 1440px) {
     .main-mnav{
-        margin-bottom: 34px;
+        margin-bottom: 33px;
     }
 
     .nav-icon{
         padding-inline: 40px;
         margin-top: 8px;
+    }
+
+    .sec-body{
+        max-width: 1440px;
+        margin: auto;
     }
 
     .bengaluru-head{
@@ -1372,6 +1423,54 @@ ul {
     .bengaluru-body{
         grid-auto-columns: calc((100% - 11px) / 7);
         padding-right: 42px;
-    }       
+        max-width: 1440px;
+    }      
+    
+    .guest{
+        padding-right: 14px;
+    }
+
+    .guests{
+        padding-right: 13px;
+    }
+
+    .inspiration{
+        padding-inline: 48px;
+        max-width: 1344px;
+    }
+
+    .main-section{
+        padding-inline: 48px;
+    }
+
+    .footer-section{
+        padding-top: 46px;
+        padding-bottom: 49px;
+    }
+
+}
+
+@media screen and (min-width: 1920px) {
+    .sec-body{
+        max-width: 1920px;
+        margin: auto;
+    }
+
+    .bengaluru-mbody{
+        padding-top: 1px;
+    }
+
+    .bengaluru-body{
+        max-width: 1920px;
+    }
+
+    .body-img{
+        width: 251.14px;
+        height: 238.58px;
+    }
+
+    .guest{
+        padding-right: 14px;
+    }
 
 }
