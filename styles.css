@@ -308,7 +308,7 @@
 /* Body */
 
 .main-body {
-    margin-bottom: 49px;
+    padding-bottom: 18px;
 }
 
 .bengaluru-main {
@@ -418,7 +418,7 @@
     overflow: hidden;
 }
 
-.guests{
+.guests {
     position: absolute;
     padding: 12px 12px 0px 12px;
     display: grid;
@@ -511,7 +511,7 @@
 
 /* Inspiration */
 
-.inspire-main{
+.inspire-main {
     background: #f7f7f7;
 }
 
@@ -931,6 +931,10 @@ ul {
         display: flex;
     }
 
+    .menu-host {
+        display: none;
+    }
+
     .div-menu {
         margin: 0px;
         justify-content: flex-end;
@@ -1079,10 +1083,6 @@ ul {
         width: 16px;
     }
 
-    .main-body {
-        margin-bottom: 47px;
-    }
-
     .bengaluru-head {
         margin-bottom: 10px;
     }
@@ -1117,8 +1117,7 @@ ul {
         display: flex;
     }
 
-    .scroll-rbutton{
-        background-color: ;
+    .scroll-rbutton {
         justify-content: center;
         align-items: center;
         border-radius: 50%;
@@ -1136,7 +1135,7 @@ ul {
         overflow: visible;
     }
 
-    .scroll-rbutton img{
+    .scroll-rbutton img {
         display: block;
         height: 12px;
         width: 12px;
@@ -1229,7 +1228,7 @@ ul {
 /* 950 */
 
 @media screen and (min-width: 950px) {
-    .main-mnav{
+    .main-mnav {
         margin-bottom: 40px;
     }
 
@@ -1253,11 +1252,11 @@ ul {
         margin-right: 8px;
     }
 
-    .d-sec{
+    .d-sec {
         padding: 14px 32px 14px 31px;
     }
 
-    .main-body{
+    .main-body {
         box-shadow: rgba(0, 0, 0, 0.1) 0 8px 24px 0, rgba(0, 0, 0, 0.02) 0 0 0 1px;
         padding-top: 32px;
     }
@@ -1269,6 +1268,7 @@ ul {
 
     .bengaluru-mbody {
         padding-inline: 32px;
+        padding-bottom: 30px;
     }
 
     .bengaluru-body {
@@ -1288,10 +1288,6 @@ ul {
 
     .inspiration {
         padding-inline: 32px;
-    }
-
-    .inspiration h2{
-        margin-bottom: 7px;
     }
 
     .footer-section {
@@ -1324,7 +1320,7 @@ ul {
         gap: 10px;
     }
 
-    .lang-rate{
+    .lang-rate {
         margin-right: 2px;
     }
 
@@ -1332,7 +1328,7 @@ ul {
         gap: 7px;
     }
 
-    .lang img{
+    .lang img {
         margin-right: 1px;
     }
 
@@ -1349,11 +1345,11 @@ ul {
 /* 1128 */
 
 @media screen and (min-width: 1128px) {
-    .options-div{
+    .options-div {
         transform: translate(64px, 4px);
     }
 
-    .menu-host{
+    .menu-host {
         font-size: 14px;
         line-height: 18px;
         letter-spacing: normal;
@@ -1362,35 +1358,36 @@ ul {
         font-weight: 500;
         padding: 11px 12px;
         will-change: transform;
+        display: block;
     }
 
-    .main-body{
+    .main-body {
         margin-bottom: 0px;
         padding-bottom: 17px
     }
 
-    .bengaluru-mbody{
+    .bengaluru-mbody {
         padding-bottom: 30px;
     }
 
-    .bengaluru-body{
+    .bengaluru-body {
         grid-auto-columns: calc((100% - 11px) / 6);
         gap: 9px;
     }
 
-    .body-img{
+    .body-img {
         width: 99%;
     }
 
-    .guest{
+    .guest {
         padding-right: 14px;
     }
 
-    .inspiration h2{
+    .inspiration h2 {
         margin-bottom: 8px;
     }
 
-    .footer-mterms{
+    .footer-mterms {
         padding-top: 6px;
     }
 }
@@ -1398,52 +1395,53 @@ ul {
 /* 1440 */
 
 @media screen and (min-width: 1440px) {
-    .main-mnav{
+    .main-mnav {
         margin-bottom: 33px;
     }
 
-    .nav-icon{
+    .nav-icon {
         padding-inline: 40px;
         margin-top: 8px;
+        max-width: 1920px;
     }
 
-    .sec-body{
+    .sec-body {
         max-width: 1440px;
         margin: auto;
     }
 
-    .bengaluru-head{
+    .bengaluru-head {
         margin-inline: 48px;
     }
 
-    .bengaluru-mbody{
+    .bengaluru-mbody {
         padding-inline: 48px;
     }
 
-    .bengaluru-body{
+    .bengaluru-body {
         grid-auto-columns: calc((100% - 11px) / 7);
         padding-right: 42px;
         max-width: 1440px;
-    }      
-    
-    .guest{
+    }
+
+    .guest {
         padding-right: 14px;
     }
 
-    .guests{
+    .guests {
         padding-right: 13px;
     }
 
-    .inspiration{
+    .inspiration {
         padding-inline: 48px;
         max-width: 1344px;
     }
 
-    .main-section{
+    .main-section {
         padding-inline: 48px;
     }
 
-    .footer-section{
+    .footer-section {
         padding-top: 46px;
         padding-bottom: 49px;
     }
@@ -1451,26 +1449,56 @@ ul {
 }
 
 @media screen and (min-width: 1920px) {
-    .sec-body{
+    .nav-icon{
+        width: 1840px;
+        margin-inline: auto;
+        margin-top: 8px;
+        max-width: 1840px;
+    }
+
+    .sec-body {
         max-width: 1920px;
         margin: auto;
     }
 
-    .bengaluru-mbody{
+    .bengaluru-mbody {
         padding-top: 1px;
     }
 
-    .bengaluru-body{
+    .bengaluru-body {
         max-width: 1920px;
     }
 
-    .body-img{
+    .body-img {
         width: 251.14px;
         height: 238.58px;
     }
 
-    .guest{
+    .guest {
         padding-right: 14px;
+    }
+
+    .inspiration {
+        max-width: 1824px;
+    }
+
+    .main-section {
+        max-width: 1824px !important;
+    }
+
+    .footer-section {
+        grid-template-columns: repeat(16, minmax(0, 1fr));
+        padding-bottom: 48px;
+        padding-top: 46px;
+        max-width: 1824px;
+    }
+
+    .section-class {
+        grid-column: span 5;
+    }
+
+    .m-bottom{
+        max-width: 1824px;
     }
 
 }
